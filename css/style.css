@@ -1,0 +1,422 @@
+html,body{
+    font-size: 16px;
+    font-family: 'open_sansregular';
+    font-weight: 300;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a {
+    text-decoration: none!important;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+/* Logs */
+
+.log_user {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.logs {
+    padding: 2px 10px;
+    background-color: #252D5D;
+    float: right;
+    margin-left: 10px;
+    cursor: pointer;
+    -webkit-transition: background-color .5s;
+       -moz-transition: background-color .5s;
+        -ms-transition: background-color .5s;
+         -o-transition: background-color .5s;
+            transition: background-color .5s;
+}
+.logs:hover{
+    background-color: #67D6FF;
+}
+.logs h4 {
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+}
+.logs > span {
+    color: #fff;
+    padding: 5px;
+    position: relative;
+    top: 2px;
+}
+
+/* Calificación */
+
+.box_content p {
+    font-weight: 100;
+    color: #54565F;
+}
+.box_content h2 {
+    color: #252D5D;
+    font-style: italic;
+    font-weight: 600;
+}
+.box_content h3 {
+    color: #2A2A2D;
+    font-weight: 400;
+    text-align: left;
+    font-size: 18px;
+    display: inline-block;
+}
+.box_content {
+    position: relative;
+    top: 220px;
+    left: 22%;
+    right: 0;
+    background-color: rgba(255,255,255,0.5);
+    width: 85%;
+    max-width: 700px;
+    padding: 10px 25px;
+}
+.calification {
+    background-image: url('../img/calificacion.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 259px;
+    height: 66px;
+    position: absolute;
+    bottom: -20px;
+    right: -28px;
+    padding: 15px;
+}
+.points_stars {
+    display: inline-block;
+}
+.points_stars span {
+    cursor: pointer;
+}
+
+
+/* Header */
+
+header {
+    background-color: #fff;
+    overflow: hidden;
+}
+header .logo{
+	float: left;
+	margin-top: 2px;
+}
+header .logo img {
+    width: 75%;
+}
+header nav {
+    float: right;
+}
+.main_header {
+    padding: 20px 0;
+}
+.main_header a:nth-child(4){
+    float: right;
+    padding-right: 0;
+}
+.main_header a{
+    padding-right: 20px;
+}
+a:focus{
+    color: #fff;
+}
+header nav li {
+    list-style-type: none;
+    position: relative;
+    float: left;
+    width: 33.33%;
+    border-left: 1px solid #2a3b72;
+    border-right: 1px solid #071235;
+}
+header nav li span {
+    padding-right: 10px;
+}
+header nav a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 300;
+    text-align: center;
+    border-top: 5px solid transparent;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    background-color: #252D5D;
+    height: 80px;
+    line-height: 80px;
+}
+header nav a:hover {
+    color: #fff;
+}
+header nav {
+    width: 100%;
+}
+
+/* home Background*/
+
+.home-bg{
+    background-image: url(../img/home-slide.jpg);
+    background-size: cover;
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+}
+.home .stick {
+    overflow: hidden;
+    height: auto;
+    background-color: transparent;
+}
+.home .stick .title_home h2, 
+.home .stick .title_home h3 {
+    margin: 0;
+    padding: 0;
+}
+.line-radius {
+    background-image: url(../img/line-radius.png);
+    background-position: 0 0;
+    width: 403px;
+    height: 6px;
+}
+section.home-bg nav li a{
+    opacity: 0;
+    text-align: left;
+    font-style: italic;
+    color: #252D5D;
+    font-weight: 600;
+    -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+         -o-transition: all .5s ease;
+            transition: all .5s ease;
+}
+section.home-bg nav li {
+    background: #EFB616;
+    margin: 20px 0;
+    border-radius: 50px;
+    padding: 14px 0;
+    position: relative;
+    top: 0;
+    height: 50px;
+    width: 0px;
+    -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+         -o-transition: all .5s ease;
+            transition: all .5s ease;
+}
+/*section.home-bg nav li.active {
+    padding: 14px 15px;
+    width: 170px;
+}*/
+section.home-bg nav li.active a{
+    opacity: 1;
+}
+section.home-bg nav span {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #252D5D;
+    text-align: center;
+    padding-top: 13px;
+}
+section.home-bg nav span:nth-child(2){
+    top: 148px;
+}
+section.home-bg nav span:nth-child(4){
+    top: 216px;
+}
+section.home-bg nav span:nth-child(6){
+    top: 287px;
+}
+section.home-bg nav span:nth-child(8){
+    top: 356px;
+}
+section.home-bg nav {
+    float: right;
+    margin-top: 127px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #efb616;
+    padding: 50px 0;
+}
+.paragraph {
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+
+}
+.paragraph h3{
+    font-size: 14px;
+}
+.paragraph span{
+    color: #252d5d;
+}
+.logo_footer {
+    position: relative;
+    top: 90px;
+}
+.paragraph > span {
+    margin-top: 10px;
+    display: inline-block;
+}
+.paragraph span {
+    color: #252d5d;
+}
+.paragraph .line {
+    border-bottom: 2px solid white;
+    width: 90%;
+    position: absolute;
+}
+.paragraph .line:nth-child(3) {
+    border-bottom: 2px solid #252D5D;
+    width: 50%;
+}
+.paragraph > p:nth-child(4) {
+    margin-top: 20px;
+}
+.social_media {
+    margin-top: 20px;
+}
+.paragraph p, .paragraph span {
+    font-size: 12px;
+}
+
+
+/* On - Finanzas */ 
+
+.finanzas {
+    background-image: url(../img/bg_finanzas.jpg);
+}
+.path_header a {
+    color: #fff;
+    font-style: italic;
+}
+.path_header {
+    background-color: #EFB616;
+    padding: 20px 0;
+}
+.home-bg.finanzas{
+    position: relative;
+}
+.stick {
+    background-color: rgba(255,255,255,0.8);
+    height: 60px;
+    position: absolute;
+    top: 10%;
+    width: 55%;
+}
+.stick .container h2 {
+    line-height: 60px;
+    margin: 0;
+    color: #252D5D;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 800;
+}
+.stick h2 span {
+    position: relative;
+    bottom: 13px;
+    font-weight: 100;
+    font-style: normal;
+}
+ul.submenu_left {
+    position: absolute;
+    top: 30%;
+    float: left;
+}
+ul.submenu_left li a {
+    background-color: #252D5D;
+    display: block;
+    padding: 10px 30px;
+    border-bottom: 1px solid #0D7DC2;
+    color: #fff;
+    transition: background-color 0.5s;
+}
+ul.submenu_left li a:hover{
+    background-color: #67d6ff;
+}
+ul.submenu_left li a.active{
+    background-color: #67d6ff;
+}
+
+/* Vivienda */
+
+.vivienda {
+    background-image: url(../img/vivienda.jpg);
+}
+
+/* Header arrows */
+
+header nav li a.active:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #0D7DC2;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    right: 0;
+    margin: auto;
+}
+header nav li a.active {
+    border-top: 5px solid #0D7DC2;
+}
+
+/* Go_back */
+
+
+.go_back {
+    width: 60px;
+    height: 60px;
+    background-color: #67d6ff;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 50%;
+    float: right;
+    clear: right;
+    margin-top: 15px;
+    -webkit-transition: all .5s;
+       -moz-transition: all .5s;
+        -ms-transition: all .5s;
+         -o-transition: all .5s;
+            transition: all .5s;
+}
+
+.go_back .icon-reply {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    -webkit-transition: background-color .3s;
+       -moz-transition: background-color .3s;
+        -ms-transition: background-color .3s;
+         -o-transition: background-color .3s;
+            transition: background-color .3s;
+}
+.go_back:hover{
+    background-color: #EFB616;
+}
