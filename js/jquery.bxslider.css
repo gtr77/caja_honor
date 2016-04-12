@@ -87,12 +87,12 @@
 
 .bx-wrapper .bx-prev {
 	left: 0px;
-	background: url(images/left_arrow2.png) no-repeat;
+	background: url(../img/left_arrow2.png) no-repeat;
 }
 
 .bx-wrapper .bx-next {
 	right: 0px;
-	background: url(images/right_arrow2.png) no-repeat;
+	background: url(../img/right_arrow2.png) no-repeat;
 }
 
 

@@ -11,9 +11,10 @@
 	<link rel="stylesheet" href="fonts/icon/style.css"/>
 	<link rel="stylesheet" href="fonts/opensans/stylesheet.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery.bxslider.css">
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
-	<link rel="stylesheet" type="text/css" href="js/jquery.bxslider.css">
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/modernizr-custom.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </head>
@@ -21,32 +22,53 @@
 
 	<!-- header  -->
 
-	<header>
+<header>
 		<div class="container">
-			<div class="main_header">
-				<div class="row">
-					<a href="home.html"><img src="img/logo.png" alt="Caja de Honor"></a>
-					<a href="#"><img src="img/logo2.png" alt="Caja de Honor"></a>
-					<a href="#"><img src="img/logo3.png" alt="Caja de Honor"></a>
-					<a href="#"><img src="img/logo4.png" alt="Caja de Honor"></a>
+			<div class="row">
+				<div class="main_header">
+					<div class="col-sm-4 col-lg-3">
+						<div class="logo_box one">
+							<a href="home.html"><img src="img/logo.png" alt="Caja de Honor"></a>
+						</div>
+					</div>
+					<div class="col-sm-4 col-lg-2">
+						<div class="logo_box two">
+							<a href="#"><img src="img/logo2.png" alt="Caja de Honor"></a>
+						</div>
+					</div>
+					<div class="col-sm-4 col-lg-3">
+						<div class="logo_box three">
+							<a href="#"><img src="img/logo3.png" alt="Caja de Honor"></a>
+						</div>
+					</div>
+					<div class="col-sm-12 col-lg-offset-2 col-lg-2">
+						<div class="logo_box four">
+							<a href="#"><img src="img/logo4.png" alt="Caja de Honor"></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<nav>
 			<ul>
-				<li><a href="finanzas.html" class="active"><span><img src="img/header_icon1.png" alt=""></span>Finanzas Personales</a></li>
-				<li><a href="#"><span><img src="img/header_icon2.png" alt=""></span>Consumidor Financiero</a></li>
-				<li><a href="#"><span><img src="img/header_icon3.png" alt=""></span>Finanzas para niños</a></li>
+				<li class="col-md-4"><a href="finanzas.html" class=""><span><img src="img/header_icon1.png" alt=""></span>Finanzas Personales</a></li>
+				<li class="col-md-4"><a href="#" class=""><span><img src="img/header_icon2.png" alt=""></span>Consumidor Financiero</a></li>
+				<li class="col-md-4"><a href="#" class=""><span><img src="img/header_icon3.png" alt=""></span>Finanzas para niños</a></li>
 			</ul>
 		</nav>
 	</header>
-
 	<section class="home-bg home">
+<!-- 		<ul class="bxslider home-bg home">
+		  <li><img src="img/bg_finanzas.jpg" /></li>
+		  <li><img src="img/home-slide.jpg" /></li>
+		  <li><img src="img/bg_finanzas.jpg" /></li>
+		  <li><img src="img/home-slide.jpg" /></li>
+		</ul> -->
 		<div class="stick">
 			<div class="container">
 				<div class="title_home">
-					<h2>Interdum Halesu</h2>
-					<h3>faucibus nec hendrerit eros</h3>
+					<h2>Finanzas Personales</h2>
+					<!-- <h3>faucibus nec hendrerit eros</h3> -->
 				</div>
 			</div>
 			<div class="line-radius"></div>				
@@ -79,9 +101,9 @@
 					</ul>
 				</nav>		
 				<div class="box_content">
-					<h2>Interdum malesuada</h2>
-					<h3>faucibus nec hendrerit eros</h3>
-					<p>Luctus luctus nibh in, blandit massa donec rutrumtus luctus nibh in, blandit massa donec rutrum Luctus luctus nibh in, blandit massa donec rutrum nisl fringilla nunc dapibus tortor at gravida mattis.</p>
+					<h2>Descripción:</h2>
+					<!-- <h3>faucibus nec hendrerit eros</h3> -->
+					<p>Este eje temático hace énfasis en la necesidad de toda persona de realizar una <strong>buena planeación financiera para su vida</strong>, la cual debe estar basada en un <strong>adecuado manejo del dinero</strong> y en la <strong>toma de decisiones informadas</strong> al momento de ahorrar e invertir, contribuyendo al <strong>mejoramiento de su calidad de vida.</strong></p>
 					<div class="calification">
 						<h3>Calificación:</h3>
 						<div class="points_stars">
@@ -97,7 +119,6 @@
 		</div>
 	</section>
 
-	<!-- footer -->
 
 	<footer>
 		<div class="container">

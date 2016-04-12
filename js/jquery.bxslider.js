@@ -15,7 +15,7 @@
 	var defaults = {
 
 		// GENERAL
-		mode: 'horizontal',
+		mode: 'fade',
 		slideSelector: '',
 		infiniteLoop: true,
 		hideControlOnEnd: false,
@@ -44,7 +44,7 @@
 		preventDefaultSwipeY: false,
 
 		// PAGER
-		pager: true,
+		pager: false,
 		pagerType: 'full',
 		pagerShortSeparator: ' / ',
 		pagerSelector: null,
