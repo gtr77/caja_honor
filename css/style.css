@@ -479,7 +479,8 @@ section.home .box_content {
 }
 
 /* Heroes */
-.heroes {
+.heroes,
+.pheroes {
     background-image: url(../img/bg-sky.jpg);
 }
 .heroes .tabs_content {
@@ -520,6 +521,217 @@ section.home-bg.heroes .stick {
     animation-iteration-count: infinite;
     animation-duration: 60s;
     animation-timing-function: linear;
+    z-index: 2;
+}
+.world2 {
+    background-image: url(../img/world2.png);
+    width: 481px;
+    height: 438px;
+    position: relative;
+    top: 0px;
+    margin: auto;
+    background-size: 100%;
+}
+.wood{
+    background-image: url(../img/wood.png);
+    width: 402px;
+    height: 72px;
+    background-repeat: no-repeat;
+}
+.wood h2 {
+    font-size: 1.2em!important;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal!important;
+}
+.pequenos_heroes {
+    background-image: url(../img/Main_text_heroes.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    width: 351px;
+    height: 164px;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+.pheroes .wood {
+    background-image: url(../img/wood.png);
+    width: 405px;
+    height: 72px;
+    display: table;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-size: 80%;
+    background-position: center;
+    position: relative;
+    top: -40px;
+    z-index: 99999999;
+}
+.pheroes .calification {
+    width: 259px;
+    height: 66px;
+    bottom: 0;
+    right: 0;
+    background-size: 85%;
+    background-position: 50% -20px;
+    padding: 7px 30px 0 35px;
+}
+.pheroes .calification h3{
+    font-size: 1em;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.sman {
+    background-image: url(../img/superhonor2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 243px;
+    height: 322px;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    z-index: 3;
+    animation: sman infinite 0.8s ease-in-out;
+}
+.worlds{
+    width: 461px;
+    height: 440px;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    z-index: 2;
+    animation: worlds infinite 120s linear;
+    opacity: 0.5;
+}
+.world1{
+    background-image: url(../img/world.png);
+    left: 0;
+}
+.world3{
+    background-image: url(../img/world3.png);
+    right: 0;
+    width: 462px;
+    height: 420px;
+}
+.nave,
+.alien {
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    background-size: 40%;
+    top: 0;
+}
+.nave{
+    background-image: url(../img/nave.png);
+    animation: nave infinite 10s linear;
+    width: 286px;
+    height: 200px;
+    left: 0;
+    z-index: 1;
+}
+.alien{
+    background-image: url(../img/alien.png);
+    animation: alien infinite 1s ease-in-out alternate;
+    width: 210px;
+    height: 200px;
+    right: 0;
+}
+section.home-bg nav.bar-pheroes {
+    position: absolute;
+    z-index: 999999;
+    top: 0;
+    right: 0;
+    margin:0;
+}
+section.home-bg nav.bar-pheroes li {
+    background: #EFB616;
+    margin: 18px 0;
+    border-radius: 50px;
+    box-shadow: -2px 0px 5px #484848;
+    padding: 14px 0;
+    position: relative;
+    top: 130px;
+    right: 15px;
+    height: 50px;
+    width: 0px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+section.home-bg nav.bar-pheroes li:nth-child(5),
+section.home-bg nav.bar-pheroes li:nth-child(7){
+    top: 134px;
+}
+section.home-bg nav.bar-pheroes span {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #252D5D;
+    text-align: center;
+    padding-top: 13px;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: -2px 0px 5px #1E1E20;
+}
+section.home-bg nav.bar-pheroes span:nth-child(2) {
+    top: 148px;
+}
+
+@keyframes nave {
+    0%{
+        transform: translate(-250px, 400px) rotate(-20deg);
+    }
+    50%{
+        transform: translate(250px, -300px) rotate(-10deg);
+    }
+    60%{
+        transform: translate(450px, -200px) rotate(65deg);
+    }
+    100%{
+        transform: translate(950px, 500px) rotate(75deg);
+
+    }
+}
+@keyframes alien {
+    0%{
+        transform: translate(0px, 15px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+
+@keyframes sman {
+    0%{
+        transform: translateY(3px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(3px);
+    }
+}
+@keyframes worlds {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
 }
 @keyframes planet {
     0%{
