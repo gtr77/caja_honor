@@ -59,7 +59,7 @@ a {
     top: 2px;
 }
 
-/* Calificación */
+/* CalificaciÃ³n */
 
 .box_content p {
     font-weight: 100;
@@ -507,31 +507,6 @@ section.home-bg.heroes .box_content {
 section.home-bg.heroes .stick {
     background-color: transparent;
 }
-.planet{
-    background-image: url(../img/world.png);
-    width: 461px;
-    height: 440px;
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 15%;
-    left: 0%;
-    animation-name: planet;
-    animation-iteration-count: infinite;
-    animation-duration: 60s;
-    animation-timing-function: linear;
-    z-index: 2;
-}
-.world2 {
-    background-image: url(../img/world2.png);
-    width: 481px;
-    height: 438px;
-    position: relative;
-    top: 0px;
-    margin: auto;
-    background-size: 100%;
-}
 .wood{
     background-image: url(../img/wood.png);
     width: 402px;
@@ -556,7 +531,7 @@ section.home-bg.heroes .stick {
     left: 0;
     right: 0;
     margin: auto;
-    z-index: 2;
+    z-index: 21;
 }
 .pheroes .wood {
     background-image: url(../img/wood.png);
@@ -568,7 +543,7 @@ section.home-bg.heroes .stick {
     background-size: 80%;
     background-position: center;
     position: relative;
-    top: -40px;
+    top: 420px;
     z-index: 99999999;
 }
 .pheroes .calification {
@@ -595,30 +570,65 @@ section.home-bg.heroes .stick {
     position: absolute;
     bottom: 70px;
     right: 0;
-    z-index: 3;
+    z-index: 30;
     animation: sman infinite 0.8s ease-in-out;
 }
 .worlds{
-    width: 461px;
-    height: 440px;
-    background-size: 60%;
+    width: 30%;
+    height: 334px;
+    background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
     top: 0%;
     z-index: 2;
     animation: worlds infinite 120s linear;
-    opacity: 0.5;
+    opacity: 0.4;
+    -webkit-transition: opacity 2.5s,
+                        background-size 2.5s;
+       -moz-transition: opacity 2.5s,
+                        background-size 2.5s;
+        -ms-transition: opacity 2.5s,
+                        background-size 2.5s;
+         -o-transition: opacity 2.5s,
+                        background-size 2.5s;
+            transition: opacity 2.5s,
+                        background-size 2.5s;
+
+    cursor: pointer;
 }
 .world1{
     background-image: url(../img/world.png);
+    width: 461px;
+    height: 440px;
     left: 0;
+}
+.world2 {
+    background-image: url(../img/world2.png);
+    width: 481px;
+    height: 438px;
+    left: 30%;
 }
 .world3{
     background-image: url(../img/world3.png);
-    right: 0;
     width: 462px;
     height: 420px;
+    left: 61.5%;
+}
+.animate{
+    background-size: 100%;
+    opacity: 1;
+    z-index: 20;
+    -webkit-transition: opacity 2.5s,
+                        background-size 2.5s;
+       -moz-transition: opacity 2.5s,
+                        background-size 2.5s;
+        -ms-transition: opacity 2.5s,
+                        background-size 2.5s;
+         -o-transition: opacity 2.5s,
+                        background-size 2.5s;
+            transition: opacity 2.5s,
+                        background-size 2.5s;
 }
 .nave,
 .alien {
@@ -642,6 +652,7 @@ section.home-bg.heroes .stick {
     width: 210px;
     height: 200px;
     right: 0;
+    z-index: 3;
 }
 section.home-bg nav.bar-pheroes {
     position: absolute;

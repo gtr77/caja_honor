@@ -1,6 +1,55 @@
 $(function(){
 
-	$('.bxslider').bxSlider();
+	var elem1 = $('#one'),
+		elem2 = $('#two'),
+		elem3 = $('#three');
+
+
+	function girarPlanetas(){
+
+		$('.worlds').on('click', function(){
+
+			var tagId = $(this).attr('id');
+			$('#'+tagId).addClass('animate').siblings('.worlds').removeClass('animate');
+			// $('.pequenos_heroes').fadeToggle();
+			if(tagId === "one"){
+				$(this).animate({
+				   'left':'30%'
+				},2500);
+				elem2.animate({
+				   'left':'61.5%'
+				},2500);
+				elem3.animate({
+				   'left':'0%'
+				},2500);	
+			}
+			else if(tagId === "three"){
+				$(this).animate({
+				   'left':'30%'
+				},2500);
+				elem1.animate({
+				   'left':'61.5%'
+				},2500);
+				elem2.animate({
+				   'left':'0%'
+				},2500);	
+			}
+			else{
+				$(this).animate({
+				   'left':'30%'
+				},2500);
+				elem3.animate({
+				   'left':'61.5%'
+				},2500);
+				elem1.animate({
+				   'left':'0%'
+				},2500);				
+			}
+
+		});
+
+	}
+	girarPlanetas();
 
 	/* Menu Principal Hover */
 
