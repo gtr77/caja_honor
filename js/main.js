@@ -15,35 +15,35 @@ $(function(){
 			if(tagId === "one"){
 				$(this).animate({
 				   'left':'30%'
-				},2500);
+				},1200);
 				elem2.animate({
 				   'left':'61.5%'
-				},2500);
+				},1200);
 				elem3.animate({
 				   'left':'0%'
-				},2500);	
+				},1200);	
 			}
 			else if(tagId === "three"){
 				$(this).animate({
 				   'left':'30%'
-				},2500);
+				},1200);
 				elem1.animate({
 				   'left':'61.5%'
-				},2500);
+				},1200);
 				elem2.animate({
 				   'left':'0%'
-				},2500);	
+				},1200);	
 			}
 			else{
 				$(this).animate({
 				   'left':'30%'
-				},2500);
+				},1200);
 				elem3.animate({
 				   'left':'61.5%'
-				},2500);
+				},1200);
 				elem1.animate({
 				   'left':'0%'
-				},2500);				
+				},1200);				
 			}
 
 		});

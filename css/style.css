@@ -584,16 +584,16 @@ section.home-bg.heroes .stick {
     z-index: 2;
     animation: worlds infinite 120s linear;
     opacity: 0.4;
-    -webkit-transition: opacity 2.5s,
-                        background-size 2.5s;
-       -moz-transition: opacity 2.5s,
-                        background-size 2.5s;
-        -ms-transition: opacity 2.5s,
-                        background-size 2.5s;
-         -o-transition: opacity 2.5s,
-                        background-size 2.5s;
-            transition: opacity 2.5s,
-                        background-size 2.5s;
+    -webkit-transition: opacity 1.2s,
+                        background-size 1.2s;
+       -moz-transition: opacity 1.2s,
+                        background-size 1.2s;
+        -ms-transition: opacity 1.2s,
+                        background-size 1.2s;
+         -o-transition: opacity 1.2s,
+                        background-size 1.2s;
+            transition: opacity 1.2s,
+                        background-size 1.2s;
 
     cursor: pointer;
 }
@@ -634,16 +634,16 @@ section.home-bg.heroes .stick {
     background-size: 100%;
     opacity: 1;
     z-index: 20;
-    -webkit-transition: opacity 2.5s,
-                        background-size 2.5s;
-       -moz-transition: opacity 2.5s,
-                        background-size 2.5s;
-        -ms-transition: opacity 2.5s,
-                        background-size 2.5s;
-         -o-transition: opacity 2.5s,
-                        background-size 2.5s;
-            transition: opacity 2.5s,
-                        background-size 2.5s;
+    -webkit-transition: opacity 1.2s,
+                        background-size 1.2s;
+       -moz-transition: opacity 1.2s,
+                        background-size 1.2s;
+        -ms-transition: opacity 1.2s,
+                        background-size 1.2s;
+         -o-transition: opacity 1.2s,
+                        background-size 1.2s;
+            transition: opacity 1.2s,
+                        background-size 1.2s;
 }
 .nave,
 .alien {
