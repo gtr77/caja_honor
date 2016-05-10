@@ -615,6 +615,21 @@ section.home-bg.heroes .stick {
     height: 420px;
     left: 61.5%;
 }
+.planet{
+     background-image: url(../img/world.png);
+     width: 461px;
+     height: 440px;
+     background-size: 70%;
+     background-position: center;
+     background-repeat: no-repeat;
+     position: absolute;
+     top: 15%;
+     left: 0%;
+     animation-name: planet;
+     animation-iteration-count: infinite;
+     animation-duration: 60s;
+     animation-timing-function: linear;
+ }
 .animate{
     background-size: 100%;
     opacity: 1;
